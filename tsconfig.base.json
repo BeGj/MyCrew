@@ -2,13 +2,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths":  {
-      "@app/*": ["app/*"],
-      "@modules/*": ["app/modules/*"],
-      "@core/*": ["app/modules/core/*"],
-      "@shared/*": ["app/modules/shared/*"],
-      "@environment/*": ["environments/*"],
+      "@app/*": ["src/app/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@core/*": ["src/app/modules/core/*"],
+      "@shared/*": ["src/app/modules/shared/*"],
+      "@environment/*": ["src/environments/*"],
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
