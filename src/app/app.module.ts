@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot(),
-    EntityDataModule.forRoot(entityConfig),
+    // EntityDataModule.forRoot(entityConfig), // Causes error. R3 injector. Depends on HttpClient(?)
     BrowserAnimationsModule
   ],
   providers: [],
