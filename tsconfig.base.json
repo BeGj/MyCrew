@@ -2,7 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "paths":  {
+      "@app/*": ["app/*"],
+      "@modules/*": ["app/modules/*"],
+      "@core/*": ["app/modules/core/*"],
+      "@shared/*": ["app/modules/shared/*"],
+      "@environment/*": ["environments/*"],
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -10,7 +17,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ESNext",
     "module": "es2020",
     "lib": [
       "es2018",
