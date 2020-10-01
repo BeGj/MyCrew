@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
+import {MediaMatcher} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyCrew';
+  fillerNav = [
+    'Home',
+    'Settings',
+    'Admin',
+  ];
+
+
+
 }
