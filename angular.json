@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MyCrew"
+    }
+  },
+  "defaultProject": "MyCrew",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
