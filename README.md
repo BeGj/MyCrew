@@ -23,11 +23,39 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 
-# Writted by Peter: 
-## Lodash example
+# Info about libraries:
+## Angular material
+[Link to docs](https://material.angular.io/components/categories)
+
+## ngRx
+[Link to docs](https://ngrx.io/docs)
+## Lodash 
+[Link to docs](https://tutorialsforangular.com/2020/08/02/using-lodash-with-angular/)
+### Example
 
 import * as _ from 'lodash';
 
 let myItem = {};
 
 let clonedItem = _.clone(myItem);
+
+## Day.js (Moment.js replacer)
+[Link to docs](https://day.js.org/docs/en/installation/typescript)
+
+### Example
+
+import * as dayjs from 'dayjs'
+
+dayjs().format()
+
+### Locale and plugin import
+
+import * as dayjs from 'dayjs'
+
+import * as isLeapYear from 'dayjs/plugin/isLeapYear' // import plugin
+
+import 'dayjs/locale/zh-cn' // import locale
+
+dayjs.extend(isLeapYear) // use plugin
+
+dayjs.locale('zh-cn') // use locale
